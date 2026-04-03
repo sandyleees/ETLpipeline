@@ -49,3 +49,5 @@ steam-etl/
 1.  [extract.py](http://extract.py) : CheapShark API에서 /deal 엔드포인트에 GET 요청을 보내 steam(storeID=1) 게임 할인 목록 20개를 가져온다 (extract_deals() 함수)
 2. [transform.py](http://transform.py) : extract_deals() 의 결과를 pandas DataFrame 으로 변환하고, 필요한 8개의 컬럼만 걸러낸 뒤 type 변환과 날짜 변환을 수행한다 (transform_deals() 함수)
 3. [load.py](http://load.py) : transfrom_deals() 의 결과 DataFrame 을 data/steam_deals.csv 파일로 저장한다. (load_to_csv() 함수)
+
+> 참고 : 약 10시간 소요 = 프로젝트 수행 + 회고록 및 학습 개념 정리 (구체적인 내용은 Notion에 작성함)
